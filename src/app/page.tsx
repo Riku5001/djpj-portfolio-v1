@@ -1,95 +1,26 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <section id="work">
+        <h2>Work</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet vehicula tortor id gravida. Suspendisse quis rhoncus ex. Sed faucibus sem sed ultricies sollicitudin. Quisque tincidunt nulla et efficitur lacinia. Mauris volutpat, magna et dapibus egestas, erat velit sagittis nulla, eu gravida urna magna vitae odio. Donec dictum nibh eu aliquam lacinia. Phasellus id ipsum tristique, lobortis diam ut, commodo ipsum. Cras sit amet neque tortor. Sed aliquam dui at nunc lacinia, ac efficitur magna placerat. Pellentesque condimentum, lacus quis semper sodales, leo odio volutpat nunc, mattis congue ex mauris quis elit. Aliquam erat volutpat. Aenean fringilla, mi ac lobortis sodales, risus nunc consectetur tellus, ut vestibulum nulla neque vel ex. Quisque ultricies sapien in eros iaculis, eu rutrum neque fringilla. Phasellus mattis, nulla sed hendrerit sodales, lectus arcu ultrices tellus, vel ornare ipsum est at magna. Donec vestibulum congue efficitur. Vestibulum sed egestas justo, in faucibus velit.</p>
+        <p>Mauris laoreet massa quis felis pharetra iaculis. Fusce eleifend et ex et dignissim. Aenean vitae volutpat augue. Donec ligula lectus, rutrum ac vehicula ac, posuere ullamcorper enim. Nulla sed varius lectus. Donec mattis metus in orci lacinia, eu pulvinar turpis pretium. Proin malesuada mauris id arcu sollicitudin consequat feugiat vitae elit. Cras vel libero mi. Integer sit amet feugiat ex, vel eleifend nibh. Proin eu magna ac leo porttitor cursus. Donec eu vehicula odio. Proin non magna sed sem porttitor facilisis et sed leo. Nulla ut vulputate nisl, ut faucibus ex.</p>
+        <p>Praesent sit amet hendrerit dui, ac dignissim nisi. Nullam sed metus sed orci scelerisque feugiat. Nullam semper, turpis et vestibulum pharetra, dolor eros mattis dui, ac varius nisl erat quis tortor. Etiam risus leo, dignissim et bibendum eu, porttitor sit amet arcu. Quisque feugiat purus augue, ut viverra lorem mollis sit amet. Morbi finibus quis ligula volutpat rhoncus. Pellentesque varius fringilla aliquet.</p>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet vehicula tortor id gravida. Suspendisse quis rhoncus ex. Sed faucibus sem sed ultricies sollicitudin. Quisque tincidunt nulla et efficitur lacinia. Mauris volutpat, magna et dapibus egestas, erat velit sagittis nulla, eu gravida urna magna vitae odio. Donec dictum nibh eu aliquam lacinia. Phasellus id ipsum tristique, lobortis diam ut, commodo ipsum. Cras sit amet neque tortor. Sed aliquam dui at nunc lacinia, ac efficitur magna placerat. Pellentesque condimentum, lacus quis semper sodales, leo odio volutpat nunc, mattis congue ex mauris quis elit. Aliquam erat volutpat. Aenean fringilla, mi ac lobortis sodales, risus nunc consectetur tellus, ut vestibulum nulla neque vel ex. Quisque ultricies sapien in eros iaculis, eu rutrum neque fringilla. Phasellus mattis, nulla sed hendrerit sodales, lectus arcu ultrices tellus, vel ornare ipsum est at magna. Donec vestibulum congue efficitur. Vestibulum sed egestas justo, in faucibus velit.</p>
+        <p>Mauris laoreet massa quis felis pharetra iaculis. Fusce eleifend et ex et dignissim. Aenean vitae volutpat augue. Donec ligula lectus, rutrum ac vehicula ac, posuere ullamcorper enim. Nulla sed varius lectus. Donec mattis metus in orci lacinia, eu pulvinar turpis pretium. Proin malesuada mauris id arcu sollicitudin consequat feugiat vitae elit. Cras vel libero mi. Integer sit amet feugiat ex, vel eleifend nibh. Proin eu magna ac leo porttitor cursus. Donec eu vehicula odio. Proin non magna sed sem porttitor facilisis et sed leo. Nulla ut vulputate nisl, ut faucibus ex.</p>
+        <p>Praesent sit amet hendrerit dui, ac dignissim nisi. Nullam sed metus sed orci scelerisque feugiat. Nullam semper, turpis et vestibulum pharetra, dolor eros mattis dui, ac varius nisl erat quis tortor. Etiam risus leo, dignissim et bibendum eu, porttitor sit amet arcu. Quisque feugiat purus augue, ut viverra lorem mollis sit amet. Morbi finibus quis ligula volutpat rhoncus. Pellentesque varius fringilla aliquet.</p>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet vehicula tortor id gravida. Suspendisse quis rhoncus ex. Sed faucibus sem sed ultricies sollicitudin. Quisque tincidunt nulla et efficitur lacinia. Mauris volutpat, magna et dapibus egestas, erat velit sagittis nulla, eu gravida urna magna vitae odio. Donec dictum nibh eu aliquam lacinia. Phasellus id ipsum tristique, lobortis diam ut, commodo ipsum. Cras sit amet neque tortor. Sed aliquam dui at nunc lacinia, ac efficitur magna placerat. Pellentesque condimentum, lacus quis semper sodales, leo odio volutpat nunc, mattis congue ex mauris quis elit. Aliquam erat volutpat. Aenean fringilla, mi ac lobortis sodales, risus nunc consectetur tellus, ut vestibulum nulla neque vel ex. Quisque ultricies sapien in eros iaculis, eu rutrum neque fringilla. Phasellus mattis, nulla sed hendrerit sodales, lectus arcu ultrices tellus, vel ornare ipsum est at magna. Donec vestibulum congue efficitur. Vestibulum sed egestas justo, in faucibus velit.</p>
+        <p>Mauris laoreet massa quis felis pharetra iaculis. Fusce eleifend et ex et dignissim. Aenean vitae volutpat augue. Donec ligula lectus, rutrum ac vehicula ac, posuere ullamcorper enim. Nulla sed varius lectus. Donec mattis metus in orci lacinia, eu pulvinar turpis pretium. Proin malesuada mauris id arcu sollicitudin consequat feugiat vitae elit. Cras vel libero mi. Integer sit amet feugiat ex, vel eleifend nibh. Proin eu magna ac leo porttitor cursus. Donec eu vehicula odio. Proin non magna sed sem porttitor facilisis et sed leo. Nulla ut vulputate nisl, ut faucibus ex.</p>
+        <p>Praesent sit amet hendrerit dui, ac dignissim nisi. Nullam sed metus sed orci scelerisque feugiat. Nullam semper, turpis et vestibulum pharetra, dolor eros mattis dui, ac varius nisl erat quis tortor. Etiam risus leo, dignissim et bibendum eu, porttitor sit amet arcu. Quisque feugiat purus augue, ut viverra lorem mollis sit amet. Morbi finibus quis ligula volutpat rhoncus. Pellentesque varius fringilla aliquet.</p>
+      </section>
     </main>
   );
 }
