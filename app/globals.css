@@ -24,6 +24,11 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+b, strong {
+  font-stretch: semi-condensed;
+  font-weight: 700;
+}
+
 a {
   color: inherit;
   text-decoration: none;
