@@ -1,4 +1,3 @@
-
 import Image from 'next/image';
 import { Noto_Sans_Mono } from 'next/font/google';
 

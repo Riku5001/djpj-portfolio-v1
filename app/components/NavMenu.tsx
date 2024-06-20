@@ -1,20 +1,22 @@
-import Link from 'next/link';
-import classes from './NavMenu.module.css';
+import { Stack } from '@mui/material';
+import NavMenuItem from './NavMenuItem';
 
 export default function NavMenu() {
 	return (
-		<nav className={classes.nav}>
-			<ul>
-				<li className={classes.item}>
-					<Link href="#work">Work</Link>
-				</li>
-				<li className={classes.item}>
-					<Link href="#skills">Skills</Link>
-				</li>
-				<li className={classes.item}>
-					<Link href="#contact">Contact</Link>
-				</li>
-			</ul>
-		</nav>
+		<Stack
+      direction="row"
+      justifyContent="space-evenly"
+      alignItems="center"
+    >
+      <NavMenuItem href="#work">
+        Work
+      </NavMenuItem>
+      <NavMenuItem href="#skills">
+        Skills
+      </NavMenuItem>
+      <NavMenuItem href="#contact">
+        Contact
+      </NavMenuItem>
+		</Stack>
 	);
 }

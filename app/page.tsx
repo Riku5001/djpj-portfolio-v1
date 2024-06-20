@@ -1,28 +1,27 @@
 import styles from "./page.module.css";
 
+import Typography from '@mui/material/Typography';
+
 import NarratorCard from "./components/NarratorCard";
+import Bubble from "./components/Bubble";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <NarratorCard />
-      <section id="work">
-        <h2>Work</h2>
-        <p><b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit. Quisque laoreet vehicula tortor id gravida. Suspendisse quis rhoncus ex. Sed faucibus sem sed ultricies sollicitudin. Quisque tincidunt nulla et efficitur lacinia. Mauris volutpat, magna et dapibus egestas, erat velit sagittis nulla, eu gravida urna magna vitae odio. Donec dictum nibh eu aliquam lacinia. Phasellus id ipsum tristique, lobortis diam ut, commodo ipsum. Cras sit amet neque tortor. Sed aliquam dui at nunc lacinia, ac efficitur magna placerat. Pellentesque condimentum, lacus quis semper sodales, leo odio volutpat nunc, mattis congue ex mauris quis elit. Aliquam erat volutpat. Aenean fringilla, mi ac lobortis sodales, risus nunc consectetur tellus, ut vestibulum nulla neque vel ex. Quisque ultricies sapien in eros iaculis, eu rutrum neque fringilla. Phasellus mattis, nulla sed hendrerit sodales, lectus arcu ultrices tellus, vel ornare ipsum est at magna. Donec vestibulum congue efficitur. Vestibulum sed egestas justo, in faucibus velit.</p>
-        <p>Mauris laoreet massa quis felis pharetra iaculis. Fusce eleifend et ex et dignissim. Aenean vitae volutpat augue. Donec ligula lectus, rutrum ac vehicula ac, posuere ullamcorper enim. Nulla sed varius lectus. Donec mattis metus in orci lacinia, eu pulvinar turpis pretium. Proin malesuada mauris id arcu sollicitudin consequat feugiat vitae elit. Cras vel libero mi. Integer sit amet feugiat ex, vel eleifend nibh. Proin eu magna ac leo porttitor cursus. Donec eu vehicula odio. Proin non magna sed sem porttitor facilisis et sed leo. Nulla ut vulputate nisl, ut faucibus ex.</p>
-        <p>Praesent sit amet hendrerit dui, ac dignissim nisi. Nullam sed metus sed orci scelerisque feugiat. Nullam semper, turpis et vestibulum pharetra, dolor eros mattis dui, ac varius nisl erat quis tortor. Etiam risus leo, dignissim et bibendum eu, porttitor sit amet arcu. Quisque feugiat purus augue, ut viverra lorem mollis sit amet. Morbi finibus quis ligula volutpat rhoncus. Pellentesque varius fringilla aliquet.</p>
-      </section>
-      <section id="skills">
-        <h2>Skills</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet vehicula tortor id gravida. Suspendisse quis rhoncus ex. Sed faucibus sem sed ultricies sollicitudin. Quisque tincidunt nulla et efficitur lacinia. Mauris volutpat, magna et dapibus egestas, erat velit sagittis nulla, eu gravida urna magna vitae odio. Donec dictum nibh eu aliquam lacinia. Phasellus id ipsum tristique, lobortis diam ut, commodo ipsum. Cras sit amet neque tortor. Sed aliquam dui at nunc lacinia, ac efficitur magna placerat. Pellentesque condimentum, lacus quis semper sodales, leo odio volutpat nunc, mattis congue ex mauris quis elit. Aliquam erat volutpat. Aenean fringilla, mi ac lobortis sodales, risus nunc consectetur tellus, ut vestibulum nulla neque vel ex. Quisque ultricies sapien in eros iaculis, eu rutrum neque fringilla. Phasellus mattis, nulla sed hendrerit sodales, lectus arcu ultrices tellus, vel ornare ipsum est at magna. Donec vestibulum congue efficitur. Vestibulum sed egestas justo, in faucibus velit.</p>
-        <p>Mauris laoreet massa quis felis pharetra iaculis. Fusce eleifend et ex et dignissim. Aenean vitae volutpat augue. Donec ligula lectus, rutrum ac vehicula ac, posuere ullamcorper enim. Nulla sed varius lectus. Donec mattis metus in orci lacinia, eu pulvinar turpis pretium. Proin malesuada mauris id arcu sollicitudin consequat feugiat vitae elit. Cras vel libero mi. Integer sit amet feugiat ex, vel eleifend nibh. Proin eu magna ac leo porttitor cursus. Donec eu vehicula odio. Proin non magna sed sem porttitor facilisis et sed leo. Nulla ut vulputate nisl, ut faucibus ex.</p>
-        <p>Praesent sit amet hendrerit dui, ac dignissim nisi. Nullam sed metus sed orci scelerisque feugiat. Nullam semper, turpis et vestibulum pharetra, dolor eros mattis dui, ac varius nisl erat quis tortor. Etiam risus leo, dignissim et bibendum eu, porttitor sit amet arcu. Quisque feugiat purus augue, ut viverra lorem mollis sit amet. Morbi finibus quis ligula volutpat rhoncus. Pellentesque varius fringilla aliquet.</p>
-      </section>
+      <Bubble id="work" title="Work" origin="left">
+        <b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit. Quisque laoreet vehicula tortor id gravida. Suspendisse quis rhoncus ex. Sed faucibus sem sed ultricies sollicitudin. Quisque tincidunt nulla et efficitur lacinia. Mauris volutpat, magna et dapibus egestas, erat velit sagittis nulla, eu gravida urna magna vitae odio.
+      </Bubble>
+      <Bubble id="skills" title="Skills" origin="left">
+        <b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit. Quisque laoreet vehicula tortor id gravida. Suspendisse quis rhoncus ex. Sed faucibus sem sed ultricies sollicitudin. Quisque tincidunt nulla et efficitur lacinia. Mauris volutpat, magna et dapibus egestas, erat velit sagittis nulla, eu gravida urna magna vitae odio.
+      </Bubble>
       <section id="contact">
-        <h2>Contact</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet vehicula tortor id gravida. Suspendisse quis rhoncus ex. Sed faucibus sem sed ultricies sollicitudin. Quisque tincidunt nulla et efficitur lacinia. Mauris volutpat, magna et dapibus egestas, erat velit sagittis nulla, eu gravida urna magna vitae odio. Donec dictum nibh eu aliquam lacinia. Phasellus id ipsum tristique, lobortis diam ut, commodo ipsum. Cras sit amet neque tortor. Sed aliquam dui at nunc lacinia, ac efficitur magna placerat. Pellentesque condimentum, lacus quis semper sodales, leo odio volutpat nunc, mattis congue ex mauris quis elit. Aliquam erat volutpat. Aenean fringilla, mi ac lobortis sodales, risus nunc consectetur tellus, ut vestibulum nulla neque vel ex. Quisque ultricies sapien in eros iaculis, eu rutrum neque fringilla. Phasellus mattis, nulla sed hendrerit sodales, lectus arcu ultrices tellus, vel ornare ipsum est at magna. Donec vestibulum congue efficitur. Vestibulum sed egestas justo, in faucibus velit.</p>
-        <p>Mauris laoreet massa quis felis pharetra iaculis. Fusce eleifend et ex et dignissim. Aenean vitae volutpat augue. Donec ligula lectus, rutrum ac vehicula ac, posuere ullamcorper enim. Nulla sed varius lectus. Donec mattis metus in orci lacinia, eu pulvinar turpis pretium. Proin malesuada mauris id arcu sollicitudin consequat feugiat vitae elit. Cras vel libero mi. Integer sit amet feugiat ex, vel eleifend nibh. Proin eu magna ac leo porttitor cursus. Donec eu vehicula odio. Proin non magna sed sem porttitor facilisis et sed leo. Nulla ut vulputate nisl, ut faucibus ex.</p>
-        <p>Praesent sit amet hendrerit dui, ac dignissim nisi. Nullam sed metus sed orci scelerisque feugiat. Nullam semper, turpis et vestibulum pharetra, dolor eros mattis dui, ac varius nisl erat quis tortor. Etiam risus leo, dignissim et bibendum eu, porttitor sit amet arcu. Quisque feugiat purus augue, ut viverra lorem mollis sit amet. Morbi finibus quis ligula volutpat rhoncus. Pellentesque varius fringilla aliquet.</p>
+        <Typography component="h2" variant="h4">
+          Work
+        </Typography>
+        <Typography component="p">
+          <b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit. Quisque laoreet vehicula tortor id gravida. Suspendisse quis rhoncus ex. Sed faucibus sem sed ultricies sollicitudin. Quisque tincidunt nulla et efficitur lacinia. Mauris volutpat, magna et dapibus egestas, erat velit sagittis nulla, eu gravida urna magna vitae odio.
+        </Typography>
       </section>
     </main>
   );

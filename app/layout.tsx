@@ -1,21 +1,15 @@
-import { useState } from "react";
+//import { useState } from "react";
 import type { Metadata } from "next";
-import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
-
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "./utils/theme";
 import "./globals.css";
-
-// TODO : create a utility function that exports a font, imports it, and applies its className where needed
-export const notoSans = Noto_Sans({ subsets: ["latin"] });
-export const notoSansMono = Noto_Sans_Mono({ weight: "700", subsets: ["latin"] });
+import NavMenu from "./components/NavMenu";
+import { Typography } from "@mui/material";
 
 export const metadata: Metadata = {
   title: "DJPJ // Web Developer",
   description: "Dominique-Jérémy Piché-Joncas' development portfolio website.",
-};
-
-const THEMES = {
-  light: "light",
-  dark: "dark"
 };
 
 export default function RootLayout({
@@ -23,19 +17,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [theme, setTheme] = useState(THEMES.light);
-
-  function handleChangeTheme() {
-    setTheme(prevTheme => prevTheme === "light" ? "dark" : "light");
-  }
 
   return (
     <html lang="en">
-      <body className={`${notoSans.className}`}>
-        {children}
-        <footer>
-          <p className={notoSansMono.className}>{`</DJPJ>`}</p>
-        </footer>
+      <body>
+        <AppRouterCacheProvider>
+          <ThemeProvider theme={theme}>
+            <Typography component="h1" variant="h3">
+              {`<DJPJ>`}
+            </Typography>
+            <Typography component="h2" variant="h4">
+              Développeur Web full-stack
+            </Typography>
+            <NavMenu />
+            {children}
+            <footer>
+              <p>{`</DJPJ>`}</p>
+            </footer>
+          </ThemeProvider>
+        </AppRouterCacheProvider>
       </body>
     </html>
   );

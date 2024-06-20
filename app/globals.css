@@ -14,16 +14,6 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  color: #292929;
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 b, strong {
   font-stretch: semi-condensed;
   font-weight: 700;
