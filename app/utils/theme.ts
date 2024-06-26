@@ -1,21 +1,34 @@
 'use client';
 
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
-import { createTheme, responsiveFontSizes } from "@mui/material/styles";
+import { PaletteMode } from "@mui/material";
 
 const notoSans = Noto_Sans({ subsets: ["latin"] });
 const notoSansMono = Noto_Sans_Mono({ weight: "700", subsets: ["latin"] });
 
-let theme = createTheme({
+export const getDesignTokens = (mode: PaletteMode) => ({
   palette: {
-    primary: {
-      main: '#913930',
-      contrastText: '#000000'
-    },
-    secondary: {
-      main: '#308791',
-      contrastText: '#FFFFFF'
-    }
+    mode,
+    ...(mode === 'light' ? {
+      primary: {
+        main: '#913930',
+        contrastText: '#000000'
+      },
+      secondary: {
+        main: '#308791',
+        contrastText: '#000000'
+      }
+    } : {
+      // palette values for dark mode
+      primary: {
+        main: '#913930',
+        contrastText: '#FFFFFF'
+      },
+      secondary: {
+        main: '#308791',
+        contrastText: '#FFFFFF'
+      }
+    })
   },
   typography: {
     fontFamily: notoSans.style.fontFamily,
@@ -33,7 +46,3 @@ let theme = createTheme({
     }
   },
 });
-
-theme = responsiveFontSizes(theme);
-
-export default theme;

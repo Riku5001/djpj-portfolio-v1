@@ -1,12 +1,9 @@
 'use client';
 
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+import { Typography, Box } from '@mui/material';
 
-import theme from '../utils/theme';
-
-export default function Bubble({ id, title, origin, children }: { id: string, title: string, origin: string, children: any }) {
-  
+export default function Bubble({ id, title, origin, children }:
+  { id: string, title: string, origin: string, children: any }) {
   return (
     <Box id={id} className={origin} sx={[
       {
@@ -14,7 +11,7 @@ export default function Bubble({ id, title, origin, children }: { id: string, ti
         padding: '1rem',
         borderRadius: '15px',
         backgroundColor: 'secondary.main',
-        my: theme.spacing(4)
+        my: '16px',
       },
       {
         '&.left': {
@@ -32,7 +29,7 @@ export default function Bubble({ id, title, origin, children }: { id: string, ti
           borderLeft: '20px solid',
           borderLeftColor: 'secondary.main',
           bottom: 0,
-          left: 'calc(-1px * sqrt((pow(20, 2)) + (pow(20, 2))))',
+          left: 'calc(-1px * sqrt((pow(20, 2)) + (pow(20, 2))) + 1px)',
           transformOrigin: 'bottom left',
           transform: 'rotate(45deg)'
         },
@@ -51,7 +48,7 @@ export default function Bubble({ id, title, origin, children }: { id: string, ti
           borderRight: '20px solid',
           borderRightColor: 'secondary.main',
           bottom: 0,
-          right: 'calc(-1px * sqrt((pow(20, 2)) + (pow(20, 2))))',
+          right: 'calc(-1px * sqrt((pow(20, 2)) + (pow(20, 2))) + 1px)',
           transformOrigin: 'bottom right',
           transform: 'rotate(-45deg)'
         }

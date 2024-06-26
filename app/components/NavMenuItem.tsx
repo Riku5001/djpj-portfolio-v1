@@ -1,4 +1,4 @@
-import LinkNextMui from "./LinkNextMUI";
+import LinkNextMui from "./LinkNextMui";
 
 export default function NavMenuItem({ href, children }: { href: string, children: any }) {
   return (
