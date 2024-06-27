@@ -12,7 +12,9 @@ const StyledNarrator = styled(Box)(() => ([
   {
     position: 'absolute',
     bottom: '0',
+    left: '0',
     right: '0',
+    margin: '0 auto',
     maxWidth: '125px',
     width: '100%',
     aspectRatio: '2/3',
@@ -155,7 +157,7 @@ const StyledDiamondInner = styled(Box)(() => ({
   width: '100%',
   height: '100%',
   clipPath: 'polygon(50% 0%, 90% 50%, 50% 100%, 10% 50%)',
-  backgroundColor: '#913930',
+  backgroundColor: '#308791',
 }))
 
 export default function NarratorCard() {

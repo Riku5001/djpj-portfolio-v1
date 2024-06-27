@@ -8,6 +8,8 @@ export default function Header() {
     return (
       <Stack
         direction="column"
+        alignItems="center"
+        width='100%'
         p="1rem"
         my="1rem"
         spacing={2}

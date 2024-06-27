@@ -8,14 +8,14 @@ export default function NavMenuItem({ href, children }: { href: string, children
         textDecoration: "none",
         padding: '5px 15px',
         border: '1px solid',
-        borderColor: 'secondary.main',
+        borderColor: 'primary.main',
         borderRadius: '10px',
         color: 'secondary.contrastText'
       },
       {
         '&:hover': {
-          border: "1px solid",
-          borderColor: 'secondary.dark'
+          padding: '3px 13px',
+          borderWidth: "3px",
         }
       }
     ]}>

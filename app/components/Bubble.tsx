@@ -2,16 +2,19 @@
 
 import { Typography, Box } from '@mui/material';
 
+type Origin = 'left' | 'right';
+
 export default function Bubble({ id, title, origin, children }:
-  { id: string, title: string, origin: string, children: any }) {
+  { id: string, title: string, origin: Origin, children: any }) {
   return (
     <Box id={id} className={origin} sx={[
       {
         position: 'relative',
         padding: '1rem',
         borderRadius: '15px',
-        backgroundColor: 'secondary.main',
-        my: '16px',
+        backgroundColor: 'primary.main',
+        color: 'primary.contrastText',
+        mb: '16px',
       },
       {
         '&.left': {
@@ -27,7 +30,7 @@ export default function Bubble({ id, title, origin, children }:
           borderTop: '20px solid transparent',
           borderBottom: '20px solid transparent',
           borderLeft: '20px solid',
-          borderLeftColor: 'secondary.main',
+          borderLeftColor: 'primary.main',
           bottom: 0,
           left: 'calc(-1px * sqrt((pow(20, 2)) + (pow(20, 2))) + 1px)',
           transformOrigin: 'bottom left',
@@ -46,7 +49,7 @@ export default function Bubble({ id, title, origin, children }:
           borderTop: '20px solid transparent',
           borderBottom: '20px solid transparent',
           borderRight: '20px solid',
-          borderRightColor: 'secondary.main',
+          borderRightColor: 'primary.main',
           bottom: 0,
           right: 'calc(-1px * sqrt((pow(20, 2)) + (pow(20, 2))) + 1px)',
           transformOrigin: 'bottom right',

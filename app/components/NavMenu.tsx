@@ -6,7 +6,8 @@ export default function NavMenu() {
 		<Stack
       direction="row"
       justifyContent="space-evenly"
-      alignItems="center"
+      width='100%'
+      maxWidth='400px'
     >
       <NavMenuItem href="#work">
         Work

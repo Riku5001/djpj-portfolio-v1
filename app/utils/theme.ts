@@ -11,11 +11,11 @@ export const getDesignTokens = (mode: PaletteMode) => ({
     mode,
     ...(mode === 'light' ? {
       primary: {
-        main: '#913930',
-        contrastText: '#000000'
+        main: '#308791',
+        contrastText: '#FFFFFF'
       },
       secondary: {
-        main: '#308791',
+        main: '#913930',
         contrastText: '#000000'
       }
     } : {
